@@ -4,8 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        .container {
+            width: 600px;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <a href="/">Your page </a> | <a href="/about">About</a> | <a href="/generate">Generate</a>
+    </header>
     {{ content | safe }} {# safe ??? Need to read #}
 </body>
-</html>
+</html> 
