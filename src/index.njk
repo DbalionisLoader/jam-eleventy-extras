@@ -7,4 +7,11 @@ layout: base.njk
         <h1>Testing Eleventy setup from 0</h1>
         <div class="content">Going great so far, installed setup the file structure and installed eleventy</div>
         <p>Now trying to add a new index template</p>
+        <div> 
+        <ul>
+            {% for article in news.articles %}
+             <li> {{ article.title }} </li>
+            {% endfor%} 
+        </ul>
+        </div>
     </div>
