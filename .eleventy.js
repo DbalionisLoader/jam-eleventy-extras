@@ -1,14 +1,18 @@
 module.exports = function(eleventyConfig) {
     // Return your Object options:
-    eleventyConfig.addPassthroughCopy("./src/style.css");
-    eleventyConfig.addPassthroughCopy("./src/assets");
-    eleventyConfig.addPassthroughCopy("src/assets/images");
-    eleventyConfig.addPassthroughCopy("./src/js");
+    eleventyConfig.addPassthroughCopy("./css/style.css");
+    eleventyConfig.addPassthroughCopy("assets");
+    eleventyConfig.addPassthroughCopy("assets/images");
+    eleventyConfig.addPassthroughCopy("./js");
 
-   
+    //Update on css changes
+    eleventyConfig.addWatchTarget("./css/");
+
+
     return {
       dir: {
-        input: "src",
+        input: ".",
+        includes: "_includes",
         output: "dist",
         data: "_data"
       }

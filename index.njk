@@ -1,14 +1,20 @@
 ---
 title: A eleventy taster page
 layout: base.njk
+eleventyImport:
+  collections: ["post"]  
 ---
- 
-    <div class="container">
+
+<h1>Content</h1>
+    
+{% include "postlist.njk" %}
+
+
+{#     <div class="container">
         <h1>Need help with eleventy? Call on discord</h1>
         <div class="content">Going great so far, installed setup the file structure and installed eleventy</div>
         <p>Now trying to add a new index template</p>
-        <div class="container">
-            
+    
         <div class="container"> 
             <h1>Testing json - Tech News</h1>
             <ul>
@@ -17,7 +23,7 @@ layout: base.njk
                     <p><a href="{{story.url}}" target="_blank" rel="noopener noreferrer">{{ story.url}}</a></p>
                 {% endfor %}
             </ul>
-   {#   {{news | dump}}  use to dump full json for troubleshot #}
+      {{news | dump}}  use to dump full json for troubleshot 
         
         </div>
-    </div>
+    </div> #}
