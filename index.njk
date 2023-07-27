@@ -4,10 +4,109 @@ layout: base.njk
 eleventyImport:
   collections: ["post"]  
 ---
+{# Hero section #}
 
-<h1>Content</h1>
+<div class="p-4 p-md-5 mb-4 mt-4 text-white bg-dark rounded">
+  <div class="col-md-6 px-0">
+    <h1 class="display-4 fst-italic">Latest blog title goes here</h1>
+    <p class="lead my-3">Latest blog summary goes here</p>
+    <p class="lead mb-0">
+      <a href="#" class="text-white fw-bold">Continue reading...</a>
+    </p>
+  </div>
+</div>
+
+{# Featured post list cards #}
+
+<div class="row mb-2">
+  <div class="col-md-4">
+    <div class="card mb-3">
+      <img src="../assets/images/abstract-blurred-multi-colored-background.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+        </div>
+    </div> 
+  </div>
+  <div class="col-md-4">
+     <div class="card mb-3">
+      <img src="../assets/images/abstract-blurred-multi-colored-background.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+        </div>
+     </div>
+  </div>
+  <div class="col-md-4">
+       <div class="card mb-3">
+      <img src="../assets/images/abstract-blurred-multi-colored-background.jpg" class="card-img-top" alt="...">
+       <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+       </div>
+     </div>
+  </div> 
+</div> {# End featured post row #}
+
+{# Main blog content #}
+
+<div class="row g-4"> {# gutter spacing between sidebar and post section #}
+    {# Post section #}
+    <div class="col-md-8">
+      <h3 class="pb-4 mb-4 fst-italic border-bottom">Blog post example goes here</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur ipsa deleniti aperiam laboriosam accusamus sit dicta vel! Sit harum quaerat possimus impedit eveniet, asperiores laborum nisi repellendus vitae est nobis.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia consequatur quod officiis ab fuga expedita saepe amet obcaecati veritatis beatae? Repellat esse voluptate sint illo nostrum ullam similique mollitia aut?</p>
+
+      <figure>
+        <blockquote class="blockquote">
+          <p>Check what block quete does</p>
+        </blockquote>
+        <figcaption class="blockqoute-footer">
+          Link to something <cite>Link</cite>
+        </figcaption>
+      </figure>
+    </div>   {# End Post section #}
     
+        {# Sidebar section #}
+    <div class="col-md-4">
+        <div class="position-sticky" style="top: 2rem">
+            {# About #}
+            <div class="p-4 mb-3 bg-light rounded">
+              <h4 class="fst-italic">About</h4>
+              <p class="mb-0">Coders guild homework blog, by Dovydas B. Learning eleventy and bootsrap</p>
+            </div> {# End about #}
+
+            <div class="p-4">
+                   <h4 class="fst-italic">Archive</h4>
+                   <ol class="list-unstyled mb-0">
+                      <li><a href="#"></a>May 2023</li>
+                      <li><a href="#"></a>June 2023</li>
+                      <li><a href="#"></a>July 2023</li>
+                      <li><a href="#"></a>August 2023</li>
+                   </ol>       
+            </div>
+            {# Social #}
+            <div class="p-4">
+                   <h4 class="fst-italic">Archive</h4>
+                   <ul class="list-unstyled mb-0">
+                      <li><a href="#"></a>Github</li>
+                      <li><a href="#"></a>Code pen</li>
+                      <li><a href="#"></a>Linkedin</li>
+                   </ul>       
+            </div>
+
+        </div> 
+    </div>    {# End Sidebar section #}
+</div> {# End of main blog content #}
+
+{# Junk #}
+<div class="container">  
 {% include "postlist.njk" %}
+</div>  
+
 
 
 {#     <div class="container">
