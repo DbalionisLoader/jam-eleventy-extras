@@ -6,7 +6,7 @@ eleventyImport:
 numberOfLatestPostsToShow: 2  
 pagination: 
   data: collections.posts
-  size: 3
+  size: 4
   reverse: true
 ---
 {# Hero section #}
@@ -37,6 +37,9 @@ pagination:
 
 <div class="row mb-2">
   {% for post in pagination.items %}
+  {% if loop.first %}
+  {# Skip latest post #}
+  {% else %}
   <div class="col-md-4 d-flex align-items-stretch"> {# flex and align to make card same height #}
     <div class="card mb-3">
       <img src="../assets/images/abstract-blurred-multi-colored-background.jpg" class="card-img-top" alt="...">
@@ -48,6 +51,7 @@ pagination:
         </div> 
     </div> 
   </div>
+  {% endif %}
   {% endfor %} 
   {# <div class="col-md-4">
      <div class="card mb-3">
