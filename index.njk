@@ -23,7 +23,7 @@ pagination:
 {# mostrecent contain the data on the latest post aka last post to be posted, start would be the oldest post #}
 {% set mostRecent = collections.posts | last %}
 
-<div class="p-4 p-md-5 mb-4 mt-4 text-white bg-dark rounded">
+<div class="p-4 p-md-5 mb-4 mt-4 text-white rounded image-fluid" style="background-image: url('{{mostRecent.data.image}}'); background-size: cover;" >
   <div class="col-md-6 px-0">
     <h1 class="display-4 fst-italic">{{mostRecent.data.title}}</h1>
     <p class="lead my-3">{{ mostRecent.data.description }}</p>
