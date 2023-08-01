@@ -15,35 +15,35 @@ layout: base.njk
   <div class="text-muted mb-3">
     <div class="row mb-3">
       <div class="col-6">
-        <label name="userFirstname" for="userfirstname" class="form-label">Firstname</label>
-        <input type="text" class="form-control" id="userfirstname" placeholder="Firstname" required>  
+        <label for="userfirstname" class="form-label">Firstname</label>
+        <input name="userFirstname" type="text" class="form-control" id="userfirstname" placeholder="Firstname" required>  
          {# Form validation feedback #}
          <div class="valid-feedback"> Valid Firstname </div>
           <div class="invalid-feedback"> Please type your firstname.</div>
      </div>    
       <div class="col-6">
-        <label name="userSurname" for="userSurname" class="form-label">Surname</label>
-        <input type="text" class="form-control" id="userSurname" placeholder="Surname" required> 
+        <label  for="userSurname" class="form-label">Surname</label>
+        <input  name="userSurname" type="text" class="form-control" id="userSurname" placeholder="Surname" required> 
          {# Form validation feedback #}
          <div class="valid-feedback"> Valid Surname </div>
           <div class="invalid-feedback"> Please type your surname.</div>
       </div> 
   </div>   
-     <label name="userEmail"  for="exampleFormControlInput1" class="form-label">Email address</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email@example.com" required>
+     <label for="exampleFormControlInput1" class="form-label">Email address</label>
+    <input name="userEmail"  type="email" class="form-control" id="exampleFormControlInput1" placeholder="email@example.com" required>
        {# Form validation feedback #}
         <div class="valid-feedback"> Valid Email </div>
           <div class="invalid-feedback"> Please enter a valid email.</div>
  </div>
 <div class="text-muted mb-3">
-  <label name="userMessage"  for="userFormMessage" class="form-label">Your Message</label>
-  <textarea class="form-control" id="userFormMessage" rows="3" required></textarea>
+  <label for="userFormMessage" class="form-label">Your Message</label>
+  <textarea  name="userMessage" class="form-control" id="userFormMessage" rows="3" required></textarea>
    {# Form validation feedback #}
     <div class="invalid-feedback"> Please enter enter a message.</div>
 </div>
 <div class="form-check mb-3">
-  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
-  <label name="userAggreement"  class="form-check-label" for="flexCheckDefault">
+  <input name="userAggreement" class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+  <label class="form-check-label" for="flexCheckDefault">
     By clicking this checkbox, you Agree to Terms and Conditions
   </label>
     <div class="invalid-feedback"> Please agree to terms and conditions before submitting.</div>
