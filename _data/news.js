@@ -8,7 +8,7 @@ async function getson() {
 }
 module.exports = getson; */
 
-const axios = require('axios');
+/* const axios = require('axios');
 require('dotenv').config();
 const API_KEY = process.env.NEWS_API_KEY;
 console.log(API_KEY);
@@ -38,4 +38,4 @@ try {
 }
 }
 
-module.exports = getson; 
+module.exports = getson;  */

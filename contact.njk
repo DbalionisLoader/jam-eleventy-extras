@@ -1,0 +1,56 @@
+---
+title: Contact me
+layout: base.njk
+---
+
+
+{# Icon and form title #}
+<div class="container p-3 bg-white rounded shadow-sm p-0 mt-5">
+   <div class="container d-flex flex-column justify-content-center align-items-center">   
+    <div class="bi bi-envelope text-muted fs-1 mt-2"></div>
+    <div><h2 class="text-center text-muted mt-2 mb-3 fw-semibold">Contact Form</h2></div>
+        </div>
+{# Main form with boostrap js *basic* validation #}        
+<form name ="contactForm" class="needs-validation" method="POST" data-netlify="true" novalidate action="">
+  <div class="text-muted mb-3">
+    <div class="row mb-3">
+      <div class="col-6">
+        <label for="userfirstname" class="form-label">Firstname</label>
+        <input type="text" class="form-control" id="userfirstname" placeholder="Firstname" required>  
+         {# Form validation feedback #}
+         <div class="valid-feedback"> Valid Firstname </div>
+          <div class="invalid-feedback"> Please type your firstname.</div>
+     </div>    
+      <div class="col-6">
+        <label for="userSurname" class="form-label">Surname</label>
+        <input type="text" class="form-control" id="userSurname" placeholder="Surname" required> 
+         {# Form validation feedback #}
+         <div class="valid-feedback"> Valid Surname </div>
+          <div class="invalid-feedback"> Please type your surname.</div>
+      </div> 
+  </div>   
+     <label for="exampleFormControlInput1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email@example.com" required>
+       {# Form validation feedback #}
+        <div class="valid-feedback"> Valid Email </div>
+          <div class="invalid-feedback"> Please enter a valid email.</div>
+ </div>
+<div class="text-muted mb-3">
+  <label for="userFormMessage" class="form-label">Your Message</label>
+  <textarea class="form-control" id="userFormMessage" rows="3" required></textarea>
+   {# Form validation feedback #}
+    <div class="invalid-feedback"> Please enter enter a message.</div>
+</div>
+<div class="form-check mb-3">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+  <label class="form-check-label" for="flexCheckDefault">
+    By clicking this checkbox, you Agree to Terms and Conditions
+  </label>
+    <div class="invalid-feedback"> Please agree to terms and conditions before submitting.</div>
+</div>
+    <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+</form>
+</div>
+
+
+<script src="/bundle.js"></script>

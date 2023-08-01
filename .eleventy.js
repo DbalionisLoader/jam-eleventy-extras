@@ -6,6 +6,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("assets");
     eleventyConfig.addPassthroughCopy("assets/images");
     eleventyConfig.addPassthroughCopy("./js");
+    eleventyConfig.addPassthroughCopy("bundle.js");
 
     //Update on css changes
     eleventyConfig.addWatchTarget("./css/");

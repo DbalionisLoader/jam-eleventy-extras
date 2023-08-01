@@ -16,6 +16,7 @@
   "dependencies": {
     "@11ty/eleventy-fetch": "^4.0.0",
     "axios": "^1.4.0",
+    "bootstrap-icons": "^1.10.5",
     "dotenv": "^16.3.1"
   }
 }
