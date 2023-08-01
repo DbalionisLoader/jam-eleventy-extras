@@ -5,13 +5,15 @@ layout: base.njk
 
 
 {# Icon and form title #}
-<div class="container p-3 bg-white rounded shadow-sm p-0 mt-5">
-   <div class="container d-flex flex-column justify-content-center align-items-center">   
+
+<div class="container p-3 bg-white rounded shadow-sm mt-5">
+   <div class="container d-flex flex-column justify-content-center align-items-center mb-4">   
     <div class="bi bi-envelope text-muted fs-1 mt-2"></div>
     <div><h2 class="text-center text-muted mt-2 mb-3 fw-semibold">Contact Form</h2></div>
         </div>
-{# Main form with boostrap js *basic* validation #}        
-<form name ="contactForm" class="needs-validation" method="POST" data-netlify="true" novalidate action="">
+{# Main form with boostrap js *basic* validation #}     
+{# For netlify forms MUST INCLUDE form name="" tag AND name="" for EACH **INPUT** field NOT label #}   
+<form name="contactForm" class="needs-validation" method="POST" data-netlify="true" novalidate action="" data-netlify-recaptcha="true">
   <div class="text-muted mb-3">
     <div class="row mb-3">
       <div class="col-6">
@@ -42,15 +44,16 @@ layout: base.njk
     <div class="invalid-feedback"> Please enter enter a message.</div>
 </div>
 <div class="form-check mb-3">
-  <input name="userAggreement" class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+  <input name="userAggreement" class="form-check-input" type="checkbox" value="User Aggreed To Terms and Conditions" id="flexCheckDefault" required>
   <label class="form-check-label" for="flexCheckDefault">
     By clicking this checkbox, you Agree to Terms and Conditions
   </label>
     <div class="invalid-feedback"> Please agree to terms and conditions before submitting.</div>
 </div>
+<div data-netlify-recaptcha="true"> </div>
     <button type="submit" class="btn btn-primary btn-lg">Submit</button>
 </form>
 </div>
 
-
+{# Basic form validation js from bootstrap website #}
 <script src="/bundle.js"></script>
