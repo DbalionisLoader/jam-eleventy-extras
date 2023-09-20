@@ -38,7 +38,7 @@ pagination:
 <div class="row mb-2">
   {% for post in pagination.items %}
   {% if loop.first %}
-  {# Skip latest post #}
+  {# Use loop.first to check for first element in array and skip it as it contains the hero section post #}
   {% else %}
   <div class="col-md-4 d-flex align-items-stretch"> {# flex and align to make card same height #}
     <div class="card mb-3">
