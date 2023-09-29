@@ -1,13 +1,47 @@
+:root{
+
+    /* Colours */
+    --main-bg-color: #1a1a1d;
+    --main-text-color: #ffffff;
+    --main-secondary-bg-color: #f6f6f6fb;
+
+    /* Spacing */
+    --main-top-margin-spacing: 160px;
+    --main-botttom-margin-spacing: 160px;
+}
+
 
 * {
 font-family: 'Roboto', Helvetica,  sans-serif;text-decoration: none;
 }
 body{
    
-    background-color: #c7e8f9;
+    background-color: var(--main-bg-color, #1a1a1d);
+    color: var(--main-text-color, #ffffff);
+}
+
+/* NAV BAR CSS */
+
+.navigation-bar{
+    background-color: var(--main-secondary-bg-color);
 }
 
 
 .main-article {
     margin-top: 100px;
+}
+
+/* ABOUT ME SECTION */
+
+.about-section {
+    margin-top: var(--main-top-margin-spacing);
+    margin-bottom: var(--main-botttom-margin-spacing);
+}
+
+
+/* POST GRID SECTION */
+
+.post-grid{
+    margin-top: var(--main-top-margin-spacing);
+    margin-bottom: var(--main-botttom-margin-spacing);
 }
