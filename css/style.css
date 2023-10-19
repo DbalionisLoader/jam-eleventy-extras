@@ -45,3 +45,29 @@ body{
     margin-top: var(--main-top-margin-spacing);
     margin-bottom: var(--main-botttom-margin-spacing);
 }
+
+
+/*====== INDEX PAGE====== */
+
+/* *** HERO SECTION *** */
+
+.hero-title h1{
+    font-size: 56px;
+    font-weight: 700;
+}
+
+.hero-title p{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* *** BLOG SECTION *** */
+
+.overlay-image{
+
+}
+
+
+
+
+
