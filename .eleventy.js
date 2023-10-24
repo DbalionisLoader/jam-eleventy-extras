@@ -1,4 +1,5 @@
 const { DateTime } = require("luxon");
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 module.exports = function(eleventyConfig) {
     // Return your Object options:
@@ -8,6 +9,8 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("./js");
     eleventyConfig.addPassthroughCopy("bundle.js");
 
+    //Plugins
+    eleventyConfig.addPlugin(syntaxHighlight);
     //Update on css changes
     eleventyConfig.addWatchTarget("./css/");
 

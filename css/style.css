@@ -67,7 +67,49 @@ body{
 
 }
 
+/*====== BLOG PAGE ====== */
+
+/* *** CODE BOX *** */
+.code-snippet {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 20px 0;
+  }
+  
+  .code-snippet pre {
+    margin: 0;
+  }
+
+/* *** TEXT STYLE *** */
+.main-article p {
+    margin-bottom: 32px;
+    font-size: 16px;
+    line-height: 28px;
+}
+.main-article h1 {
+    margin-bottom: 32px;
+    margin-top: 32px;
+}
+
+.callout {
+    background-color: #383838;
+    padding: 1rem;
+    border: #b5b5b5 solid 1px;
+    border-radius: 10px;
+    margin-bottom: 32px;
+}
 
 
+.callout a{
+color: #f0f0f0;
+}
 
+.callout a:hover{
+    color: #8dd9f6;
+    }
 
+.common-errors {
+    margin-bottom: 64px;
+}
