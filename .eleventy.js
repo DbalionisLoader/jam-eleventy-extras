@@ -6,7 +6,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("./css/style.css");
     eleventyConfig.addPassthroughCopy("assets");
     eleventyConfig.addPassthroughCopy("assets/images");
-    eleventyConfig.addPassthroughCopy("./js");
+    eleventyConfig.addPassthroughCopy("js");
     eleventyConfig.addPassthroughCopy("bundle.js");
 
     //Plugins

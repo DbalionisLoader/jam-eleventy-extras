@@ -24,12 +24,56 @@ body{
 
 .navigation-bar{
     background-color: var(--main-secondary-bg-color);
+    font-size: 18px;
 }
 
 
 .main-article {
     margin-top: 100px;
 }
+/* *** Mobile menu items *** */
+
+@media (max-width: 985px) {
+    .nav-item-box {
+      /*   border: solid 1px gray; */
+      border-radius: 10px;
+        overflow:hidden;
+    }
+   
+    .nav-item-box a:focus {
+     
+        border:#044e72 solid 2px;
+        border-radius: 10px;
+        color: #044e72; 
+        background-color: #bdbdbd;
+    }  
+    
+    .nav-item-box a:active{
+        border-radius: 10px;
+        color: #044e72; 
+        border:#13b0fd solid 2px;
+    }
+    .nav-item-box a:hover{
+    background-color: #bdbdbd;
+    }
+    .nav-item-box-focus{
+        border-radius: 10px;
+        background-color: #ccc;
+    }  
+}
+
+
+
+/* Remove hamburger menu outline */
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
 
 /* ABOUT ME SECTION */
 

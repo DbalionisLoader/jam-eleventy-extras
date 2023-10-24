@@ -1,3 +1,5 @@
+console.log("js d working");
+
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 (() => {
     'use strict'
@@ -17,3 +19,17 @@
       }, false)
     })
   })() 
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const links = document.querySelectorAll("nav a.nav-link");
+    console.log("links should be here");
+    console.log(links);
+    const currentPath = window.location.pathname;
+    console.log(currentPath);
+    links.forEach(function (link) {
+      console.log(link.getAttribute("href"));
+      if (link.getAttribute("href") === currentPath) {
+        link.parentElement.classList.add("nav-item-box-focus");
+      }
+    });
+  });
