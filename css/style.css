@@ -85,6 +85,19 @@ body{
     border: none;
     box-shadow: none;
 }
+/* FOOTER */
+
+.footer i{
+    font-size: 2rem;
+    padding-left: 16px;
+}
+.footer-icons a{
+    color:white;
+}
+
+.footer-icons a:hover{
+    color:var(--accent-color);
+}
 
 
 /* ABOUT ME SECTION */
