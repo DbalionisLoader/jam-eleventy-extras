@@ -4,7 +4,7 @@
     --main-bg-color: #1a1a1d;
     --main-text-color: #ffffff;
     --main-secondary-bg-color: #f6f6f6fb;
-
+    --accent-color: #DA4167;
     /* Spacing */
     --main-top-margin-spacing: 160px;
     --main-botttom-margin-spacing: 160px;
@@ -30,6 +30,18 @@ body{
 
 .main-article {
     margin-top: 100px;
+}
+
+.navbar-brand a{
+    color:var(--main-bg-color);
+}
+
+.nav-item-box a {
+    color:var(--main-bg-color);
+}
+
+.nav-item-box a:hover {
+    color:var(--accent-color);
 }
 /* *** Mobile menu items *** */
 
