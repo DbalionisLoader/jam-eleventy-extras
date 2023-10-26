@@ -20,6 +20,13 @@ body{
     color: var(--main-text-color, #ffffff);
 }
 
+/* UTILITY CLASS */
+.l-margin {
+margin-bottom: var(--main-botttom-margin-spacing);
+}
+.no-link-underline{
+    text-decoration: none;
+}
 /* NAV BAR CSS */
 
 .navigation-bar{
@@ -99,42 +106,6 @@ body{
     color:var(--accent-color);
 }
 
-/*====== ABOUT PAGE ====== */
-
-/* *** Gallery *** */
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(8, 5vw);
-    grid-gap: 8px;
-}
-
-.gallery__img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-/* *** Gallery item positioning *** */
-.gallery__item--1 {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 2;
-    grid-row-end: 7;
-}
-
-.gallery__item--2 {
-    grid-column-start: 3;
-    grid-column-end: 7;
-    grid-row-start: 1;
-    grid-row-end: 3;
-}
-
-.gallery__item--3 {
-    grid-column-start: 3;
-    grid-column-end: 7;
-    grid-row-start: 3;
-    grid-row-end: 8;
-}
 
 /* ABOUT ME SECTION */
 
@@ -219,3 +190,65 @@ color: #f0f0f0;
     margin-bottom: 64px;
 }
 
+/*====== ABOUT PAGE ====== */
+
+/* *** Gallery *** */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 8px;
+}
+
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+/* *** Gallery item positioning *** */
+.gallery__item--1 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 7;
+}
+
+.gallery__item--2 {
+    grid-column-start: 3;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.gallery__item--3 {
+    grid-column-start: 3;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 8;
+}
+
+/* *** About text section *** */
+
+.subheading{
+    color: var(--accent-color);
+    font-size: 1.5rem;
+}
+
+.about-section h1 {
+    font-weight: 700;
+    font-size: 4rem;        
+}
+
+.about-section h2{
+    font-weight: 700;
+    font-size: 1.5rem;  
+} 
+.about-section p{
+    font-weight: 500;
+    font-size: 1.2rem;        
+}
+
+.about-text-body {
+    padding-right: 64px;
+}
