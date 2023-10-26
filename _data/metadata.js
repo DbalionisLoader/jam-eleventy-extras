@@ -2,7 +2,7 @@ module.exports = {
 	title: "Dovydas B. Code Adventures: Tips, Tricks and Tutorials",
 	url: "",
 	language: "en",
-	description: "Discover Practical Solutions to Real-Life Developer Challenges Solved – Dive into a treasure trove of coding insights and problem-solving wisdom on my dev blog",
+	description: "Discover tutorial style blog posts for web development – Sharing my journey as a growing developer",
 	author: {
 		name: "Dovydas Balionis",
 		email: "dbalionis@outlook.com",
