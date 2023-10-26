@@ -8,6 +8,8 @@
     /* Spacing */
     --main-top-margin-spacing: 160px;
     --main-botttom-margin-spacing: 160px;
+    --main-top-margin-spacing-mobile: 40px;
+    --main-botttom-margin-spacing-mobile: 40px;
 }
 
 
@@ -114,6 +116,12 @@ margin-bottom: var(--main-botttom-margin-spacing);
     margin-bottom: var(--main-botttom-margin-spacing);
 }
 
+@media(max-width:985px) {
+    .about-section {
+        margin-top: var(--main-top-margin-spacing-mobile);
+        margin-bottom: var(--main-botttom-margin-spacing-mobile);
+    }
+}
 
 /* POST GRID SECTION */
 
@@ -226,6 +234,29 @@ color: #f0f0f0;
     grid-column-end: 7;
     grid-row-start: 3;
     grid-row-end: 8;
+}
+
+@media(max-width:985px) {
+    .gallery__item--1 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 7;
+    }
+    
+    .gallery__item--2 {
+        grid-column-start: 3;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        grid-row-end: 4;
+    }
+
+    .gallery__item--3 {
+        grid-column-start: 3;
+        grid-column-end: 6;
+        grid-row-start: 4;
+        grid-row-end: 8;
+    }
 }
 
 /* *** About text section *** */
