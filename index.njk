@@ -14,7 +14,7 @@ pagination:
  <div class="container about-section">
   <div class="row align-items-center">
     <div class="col-12 col-md-6 mb-5 hero-title" > 
-      <h1 class="mb-4">JAMstack Blog: <br> Tips, Tricks, and Insights</h1>
+      <h1 class="mb-4">Developer Blog: <br> Tips, Tricks, and Insights</h1>
       <p class="pe-5">Discover articles covering web development using JAMstack principles</p>
     </div>
       <div class="col-12 col-md-6">
@@ -32,9 +32,9 @@ pagination:
 
 <div class="container text-decoration-none">
   <div class="p-4 p-md-5 l-margin mt-4 text-white rounded image-fluid overlay-image l-margin" style="background:  linear-gradient(90deg, rgba(26,32,44,1) 0%, rgba(65,65,65,0.5328198173800771) 100%), url('{{mostRecent.data.image}}');  background-size: cover;" >
-   <a href="{{ mostRecent.url }}" class="text-white card-link" > <div class="col-md-6 px-0 text-decoration-none">
-      <h1 class="display-4 fst-italic text-decoration-none">{{mostRecent.data.title}}</h1>
-      <p class="lead my-3">{{ mostRecent.data.description }}</p>
+   <a href="{{ mostRecent.url }}" class="text-white card-link no-link-underline"> <div class="col-md-6 px-0 no-link-underline">
+      <h1 class="display-4 fst-italic no-link-underline">{{mostRecent.data.title}}</h1>
+      <p class="lead my-3 no-link-underline">{{ mostRecent.data.description }}</p>
       <p class="lead mb-0"> </a>
       <a href="{{ mostRecent.url }}" class="text-white fw-bold">Continue reading...</a>
       </p>
